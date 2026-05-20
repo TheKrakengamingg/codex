@@ -12,6 +12,8 @@ These rules customize this fork for TheKrakengamingg's VPS and product work.
 - When changing scheduled automation, verify the Windows Scheduled Task and log paths after changes.
 - When making UI changes, keep the interface practical and operator-focused. Avoid decorative sections that do not work.
 - When asked to "teach" or "train" this agent, add durable instructions as AGENTS.md rules or `.codex/skills/*/SKILL.md`, not as chat-only advice.
+- The user's future project areas include: Streamer.bot/FiveM/OBS automation, OG-RP roadmap and changelog work, full-stack websites such as krakencore.org, SQL-backed features, TCG/card systems, and branded content generation with ElevenLabs voice variation.
+- When working on these areas, prefer creating reusable action chains, documented workflows, and automation-safe modules rather than one-off scripts.
 
 # Rust/codex-rs
 
