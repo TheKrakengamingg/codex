@@ -1,3 +1,18 @@
+# Kraken Custom Agent Rules
+
+These rules customize this fork for TheKrakengamingg's VPS and product work.
+
+- Default conversation language is Lithuanian unless the user asks for English.
+- The user's main production project is `C:\Users\Administrator\ai-shorts-factory`.
+- Treat `.env`, OAuth tokens, API keys, and files under `secrets/` as sensitive. Never print secrets back to the user. Prefer describing variable names rather than values.
+- On Windows, prefer PowerShell commands and avoid destructive filesystem commands unless explicitly requested.
+- For the AI Shorts system, prefer focused edits in `src/shorts_factory.py`, `src/autopilot.py`, `src/web_app.py`, and uploader modules. Keep generated outputs out of git.
+- For public web panels, always consider authentication, rate limiting, button double-submit protection, and whether a route exposes generated files.
+- For autopilot work, avoid accidental API credit drain: add retry limits, locks, idempotency, and clear logging.
+- When changing scheduled automation, verify the Windows Scheduled Task and log paths after changes.
+- When making UI changes, keep the interface practical and operator-focused. Avoid decorative sections that do not work.
+- When asked to "teach" or "train" this agent, add durable instructions as AGENTS.md rules or `.codex/skills/*/SKILL.md`, not as chat-only advice.
+
 # Rust/codex-rs
 
 In the codex-rs folder where the rust code lives:
